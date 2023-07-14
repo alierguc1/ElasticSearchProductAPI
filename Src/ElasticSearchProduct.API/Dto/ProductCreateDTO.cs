@@ -1,5 +1,6 @@
 ﻿using AutoMapper.Features;
 using ElasticSearchProduct.API.Models;
+using ElasticSearchProduct.API.Models.Enums;
 
 namespace ElasticSearchProduct.API.Dto
 {
@@ -15,7 +16,7 @@ namespace ElasticSearchProduct.API.Dto
                 Price = Price,
                 Stock = Stock,
                 WarrantyPeriod = WarrantyPeriod,
-                Feature = new ProductFeature() { Width = Feature.width, Height = Feature.height, Color = Feature.color }
+                Feature = new ProductFeature() { Width = Feature.width, Height = Feature.height, Color = (ProductColor)int.Parse(Feature.color)}
             };
         }
     }

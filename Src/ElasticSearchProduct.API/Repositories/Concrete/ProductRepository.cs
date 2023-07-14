@@ -31,5 +31,13 @@ namespace ElasticSearchProduct.API.Repositories.Concrete
             newProduct.Id = response.Id;
             return newProduct;
         }
+
+        public async Task<Product?> GetByIdAsync(string @id)
+        {
+            var response = await _elasticClient.GetAsync<Product>(id, x => x.Index(indexName));
+            if (!response.IsValid) return null;
+            response.Source.Id = response.Id;
+            return response.Source;
+        }
     }
 }

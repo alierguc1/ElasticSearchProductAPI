@@ -7,5 +7,6 @@ namespace ElasticSearchProduct.API.Repositories.Interfaces
     {
         Task<Product> SaveAsync(Product @newProduct);
         Task<ImmutableList<Product>> GetAllAsync();
+        Task<Product> GetByIdAsync(string @id);
     }
 }

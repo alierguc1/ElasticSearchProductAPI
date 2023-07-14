@@ -23,9 +23,16 @@ namespace ElasticSearchProduct.API.Services.Concrete
             var productListDto = products.Select(x =>
                 new ProductDTO(x.Id, x.Name,
                 x.StockCode, x.Price,
-                x.Stock, x.WarrantyPeriod, new ProductFeatureDTO(x.Feature.Width, x.Feature.Height, x.Feature.Color))).ToList();
+                x.Stock, x.WarrantyPeriod, new ProductFeatureDTO(x.Feature.Width, x.Feature.Height, x.Feature.Color.ToString()))).ToList();
 
             return ProductReponseDTO<List<ProductDTO>>.Success(productListDto, HttpStatusCode.OK);
+        }
+
+        public async Task<ProductReponseDTO<ProductDTO?>> GetByIdAsync(string id)
+        {
+            var hasProduct = await _productRepository.GetByIdAsync(id);
+            if(hasProduct==null) return ProductReponseDTO<ProductDTO?>.Fail("Ürün Bulunamadı.", HttpStatusCode.OK);
+            return ProductReponseDTO<ProductDTO?>.Success(hasProduct.CreateDto(), HttpStatusCode.OK);
         }
 
         public async Task<ProductReponseDTO<ProductDTO>> SaveAsync(ProductCreateDTO productCreateDTO)
@@ -35,5 +42,7 @@ namespace ElasticSearchProduct.API.Services.Concrete
             if (response == null) return ProductReponseDTO<ProductDTO>.Fail(new List<string>{ "Ürün oluşturulurken bir hata meydana geldi." },System.Net.HttpStatusCode.InternalServerError);
             return ProductReponseDTO<ProductDTO>.Success(response.CreateDto(), System.Net.HttpStatusCode.OK);
         }
+
+       
     }
 }

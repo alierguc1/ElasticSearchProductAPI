@@ -23,7 +23,7 @@ namespace ElasticSearchProduct.API.Models
                 return new ProductDTO(Id, Name, StockCode, Price, Stock, WarrantyPeriod, null);
             }
 
-            return new ProductDTO(Id, Name, StockCode, Price, Stock, WarrantyPeriod, new ProductFeatureDTO(Feature.Width, Feature.Height, Feature.Color));
+            return new ProductDTO(Id, Name, StockCode, Price, Stock, WarrantyPeriod, new ProductFeatureDTO(Feature.Width, Feature.Height, Feature.Color.ToString()));
         }
 
     }

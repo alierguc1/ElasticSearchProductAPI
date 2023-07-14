@@ -8,5 +8,7 @@ namespace ElasticSearchProduct.API.Services.Interfaces
         Task<ProductReponseDTO<ProductDTO>> SaveAsync(ProductCreateDTO productCreateDTO);
 
         Task<ProductReponseDTO<List<ProductDTO>>> GetAllAsync();
+
+        Task<ProductReponseDTO<ProductDTO?>> GetByIdAsync(string @id);
     }
 }

@@ -17,6 +17,10 @@ namespace ElasticSearchProduct.API.Dto
         public static ProductReponseDTO<T> Fail(List<string> errors, HttpStatusCode HttpStatusCode) {  
             return new ProductReponseDTO<T> { Errors = errors, HttpStatusCode = HttpStatusCode};
         }
+        public static ProductReponseDTO<T> Fail(string error, HttpStatusCode HttpStatusCode)
+        {
+            return new ProductReponseDTO<T> { Errors = new List<string> { error }, HttpStatusCode = HttpStatusCode };
+        }
 
     }
 }
