@@ -1,4 +1,9 @@
 ﻿using Elasticsearch.Net;
+using ElasticSearchProduct.API.Repositories.Concrete;
+using ElasticSearchProduct.API.Repositories.Interfaces;
+using ElasticSearchProduct.API.Services.Concrete;
+using ElasticSearchProduct.API.Services.Interfaces;
+using Microsoft.Extensions.DependencyInjection;
 using Nest;
 
 namespace ElasticSearchProduct.API.Extension
@@ -15,6 +20,7 @@ namespace ElasticSearchProduct.API.Extension
             var pool = new SingleNodeConnectionPool(new Uri(configuration.GetSection("Elastic")["Url"]!));
             var settings = new ConnectionSettings(pool);
             var client = new ElasticClient(settings);
+          
             services.AddSingleton(client);
         }
     }

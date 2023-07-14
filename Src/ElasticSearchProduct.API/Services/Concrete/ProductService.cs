@@ -16,14 +16,11 @@ namespace ElasticSearchProduct.API.Services.Concrete
         }
 
         public async Task<ProductReponseDTO<ProductDTO>> SaveAsync(ProductCreateDTO productCreateDTO)
-        {
-          
+        {     
             var response = await _productRepository.SaveAsync(productCreateDTO.CreateProduct());
 
             if (response == null) return ProductReponseDTO<ProductDTO>.Fail(new List<string>{ "Ürün oluşturulurken bir hata meydana geldi." },System.Net.HttpStatusCode.InternalServerError);
             return ProductReponseDTO<ProductDTO>.Success(response.CreateDto(), System.Net.HttpStatusCode.OK);
-
-
         }
     }
 }

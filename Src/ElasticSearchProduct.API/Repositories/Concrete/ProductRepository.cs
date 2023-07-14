@@ -6,12 +6,12 @@ namespace ElasticSearchProduct.API.Repositories.Concrete
 {
     public class ProductRepository : IProductRepository
     {
-        private readonly IElasticClient _elasticClient;
-        public ProductRepository(IElasticClient elasticClient)
+        private readonly ElasticClient _elasticClient;
+        public ProductRepository(ElasticClient elasticClient)
         {
             _elasticClient = elasticClient;
         }
-        public async Task<Product?> SaveAsync(Product newProduct)
+        public async Task<Product> SaveAsync(Product newProduct)
         {
             newProduct.Created = DateTime.Now;
             var response = await _elasticClient.IndexAsync(newProduct, x => x.Index("products"));

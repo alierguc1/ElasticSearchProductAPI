@@ -9,9 +9,9 @@ namespace ElasticSearchProduct.API.Extension
     {
         public static void AddInversionOfContainerDependencies(this IServiceCollection services)
         {
-            services.AddScoped<IProductRepository,ProductRepository>();
-            services.AddScoped<IProductService,ProductService>();
-            services.AddAutoMapper();
+            services.AddScoped<IProductRepository, ProductRepository>();
+            services.AddScoped<IProductService, ProductService>();
+
         }
     }
 }

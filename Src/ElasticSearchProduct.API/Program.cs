@@ -10,9 +10,9 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.AddInversionOfContainerDependencies();
-builder.Services.AddElasticSearchDependency(builder.Configuration);
 
+builder.Services.AddElasticSearchDependency(builder.Configuration);
+builder.Services.AddInversionOfContainerDependencies();
 var app = builder.Build();
 
 

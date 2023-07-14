@@ -33,3 +33,4 @@ C:\Users\Cihan\Desktop\ElasticSearchProductAPI\ElasticSearchProductAPI\Src\Elast
 C:\Users\Cihan\Desktop\ElasticSearchProductAPI\ElasticSearchProductAPI\Src\ElasticSearchProduct.API\obj\Debug\net7.0\ref\ElasticSearchProduct.API.dll
 C:\Users\Cihan\Desktop\ElasticSearchProductAPI\ElasticSearchProductAPI\Src\ElasticSearchProduct.API\bin\Debug\net7.0\Elasticsearch.Net.dll
 C:\Users\Cihan\Desktop\ElasticSearchProductAPI\ElasticSearchProductAPI\Src\ElasticSearchProduct.API\bin\Debug\net7.0\Nest.dll
+C:\Users\Cihan\Desktop\ElasticSearchProductAPI\ElasticSearchProductAPI\Src\ElasticSearchProduct.API\bin\Debug\net7.0\AutoMapper.dll
