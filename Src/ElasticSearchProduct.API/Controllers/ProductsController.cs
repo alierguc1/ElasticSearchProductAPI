@@ -17,11 +17,18 @@ namespace ElasticSearchProduct.API.Controllers
         }
 
 
-        [HttpPost]
+        [HttpPost("CreateProduct")]
         public async Task<IActionResult> CreateProduct(ProductCreateDTO productCreateDTO)
         {
             var response = await _productService.SaveAsync(productCreateDTO);
             return CreateActionResult(response);
-        } 
+        }
+
+        [HttpGet("GetAllProducts")]
+        public async Task<IActionResult> GetAllProducts()
+        {
+            var response = await _productService.GetAllAsync();
+            return CreateActionResult(response);
+        }
     }
 }

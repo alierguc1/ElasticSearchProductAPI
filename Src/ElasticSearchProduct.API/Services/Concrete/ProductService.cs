@@ -3,6 +3,8 @@ using ElasticSearchProduct.API.Dto;
 using ElasticSearchProduct.API.Models;
 using ElasticSearchProduct.API.Repositories.Interfaces;
 using ElasticSearchProduct.API.Services.Interfaces;
+using System.Collections.Immutable;
+using System.Net;
 
 namespace ElasticSearchProduct.API.Services.Concrete
 {
@@ -13,6 +15,17 @@ namespace ElasticSearchProduct.API.Services.Concrete
         public ProductService(IProductRepository productRepository)
         {
             _productRepository = productRepository;
+        }
+
+        public async Task<ProductReponseDTO<List<ProductDTO>>> GetAllAsync()
+        {
+            var products = await _productRepository.GetAllAsync();
+            var productListDto = products.Select(x =>
+                new ProductDTO(x.Id, x.Name,
+                x.StockCode, x.Price,
+                x.Stock, x.WarrantyPeriod, new ProductFeatureDTO(x.Feature.Width, x.Feature.Height, x.Feature.Color))).ToList();
+
+            return ProductReponseDTO<List<ProductDTO>>.Success(productListDto, HttpStatusCode.OK);
         }
 
         public async Task<ProductReponseDTO<ProductDTO>> SaveAsync(ProductCreateDTO productCreateDTO)
