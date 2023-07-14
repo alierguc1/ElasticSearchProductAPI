@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "oG7S2u8WsbbiGNLKaWZUfElBwIuCUCW+C1wyWJR2x0zYFCjzo1DN4JwpHLdNk2DDikXCsybt90slsVCIL5OBXA==",
+  "dgSpecHash": "lX8uxEpLf0gzn6+WgqhdQI8KnK2IgoEQKaUNQqro6E5JCVdjDmKL9Oknyjh3HZPfYnnIsuIdFMh3eZliy3NkWQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Cihan\\Desktop\\ElasticSearchProductAPI\\ElasticSearchProductAPI\\Src\\ElasticSearchProduct.API\\ElasticSearchProduct.API.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Cihan\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\Cihan\\.nuget\\packages\\elasticsearch.net\\7.17.5\\elasticsearch.net.7.17.5.nupkg.sha512",
     "C:\\Users\\Cihan\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.9\\microsoft.aspnetcore.openapi.7.0.9.nupkg.sha512",
-    "C:\\Users\\Cihan\\.nuget\\packages\\microsoft.csharp\\4.6.0\\microsoft.csharp.4.6.0.nupkg.sha512",
+    "C:\\Users\\Cihan\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Cihan\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\Cihan\\.nuget\\packages\\microsoft.openapi\\1.4.3\\microsoft.openapi.1.4.3.nupkg.sha512",
     "C:\\Users\\Cihan\\.nuget\\packages\\nest\\7.17.5\\nest.7.17.5.nupkg.sha512",
