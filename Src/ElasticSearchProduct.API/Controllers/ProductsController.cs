@@ -7,7 +7,7 @@ namespace ElasticSearchProduct.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ProductsController : ControllerBase
+    public class ProductsController : BaseController
     {
         private readonly IProductService _productService;
 
@@ -21,7 +21,7 @@ namespace ElasticSearchProduct.API.Controllers
         public async Task<IActionResult> CreateProduct(ProductCreateDTO productCreateDTO)
         {
             var response = await _productService.SaveAsync(productCreateDTO);
-            return Ok(response);
+            return CreateActionResult(response);
         } 
     }
 }
