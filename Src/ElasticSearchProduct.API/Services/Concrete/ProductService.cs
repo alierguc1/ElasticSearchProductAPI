@@ -3,6 +3,7 @@ using ElasticSearchProduct.API.Dto;
 using ElasticSearchProduct.API.Models;
 using ElasticSearchProduct.API.Repositories.Interfaces;
 using ElasticSearchProduct.API.Services.Interfaces;
+using Nest;
 using System.Collections.Immutable;
 using System.Net;
 
@@ -43,6 +44,11 @@ namespace ElasticSearchProduct.API.Services.Concrete
             return ProductReponseDTO<ProductDTO>.Success(response.CreateDto(), System.Net.HttpStatusCode.OK);
         }
 
-       
+        public async Task<ProductReponseDTO<bool>> UpdateAsync(ProductUpdateDTO productUpdateDTO)
+        {
+            var isSuccess = await _productRepository.UpdateAsync(productUpdateDTO); 
+            if(!isSuccess) return ProductReponseDTO<bool>.Fail(new List<string> { "" }, System.Net.HttpStatusCode.BadRequest);
+            return ProductReponseDTO<bool>.Success(true, System.Net.HttpStatusCode.OK);
+        }
     }
 }

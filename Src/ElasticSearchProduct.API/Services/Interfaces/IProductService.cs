@@ -10,5 +10,7 @@ namespace ElasticSearchProduct.API.Services.Interfaces
         Task<ProductReponseDTO<List<ProductDTO>>> GetAllAsync();
 
         Task<ProductReponseDTO<ProductDTO?>> GetByIdAsync(string @id);
+
+        Task<ProductReponseDTO<bool>> UpdateAsync(ProductUpdateDTO @productUpdateDTO);
     }
 }

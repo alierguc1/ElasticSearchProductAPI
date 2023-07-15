@@ -1,4 +1,5 @@
-﻿using ElasticSearchProduct.API.Models;
+﻿using ElasticSearchProduct.API.Dto;
+using ElasticSearchProduct.API.Models;
 using ElasticSearchProduct.API.Repositories.Interfaces;
 using Nest;
 using System.Collections.Immutable;
@@ -38,6 +39,14 @@ namespace ElasticSearchProduct.API.Repositories.Concrete
             if (!response.IsValid) return null;
             response.Source.Id = response.Id;
             return response.Source;
+        }
+
+        public async Task<bool> UpdateAsync(ProductUpdateDTO productUpdateDTO)
+        {
+            var response = await _elasticClient.UpdateAsync
+                <Product,ProductUpdateDTO>(productUpdateDTO.Id, x => x.Index(indexName).Doc(productUpdateDTO));
+
+            return response.IsValid;
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using ElasticSearchProduct.API.Models;
+﻿using ElasticSearchProduct.API.Dto;
+using ElasticSearchProduct.API.Models;
 using System.Collections.Immutable;
 
 namespace ElasticSearchProduct.API.Repositories.Interfaces
@@ -8,5 +9,6 @@ namespace ElasticSearchProduct.API.Repositories.Interfaces
         Task<Product> SaveAsync(Product @newProduct);
         Task<ImmutableList<Product>> GetAllAsync();
         Task<Product> GetByIdAsync(string @id);
+        Task<bool> UpdateAsync(ProductUpdateDTO @productUpdateDTO);
     }
 }
