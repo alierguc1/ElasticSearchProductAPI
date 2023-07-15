@@ -48,5 +48,13 @@ namespace ElasticSearchProduct.API.Repositories.Concrete
 
             return response.IsValid;
         }
+
+        public async Task<bool> DeleteAsync(string Id)
+        {
+            var response = await _elasticClient.DeleteAsync
+               <Product>(Id, x => x.Index(indexName));
+
+            return response.IsValid;
+        }
     }
 }

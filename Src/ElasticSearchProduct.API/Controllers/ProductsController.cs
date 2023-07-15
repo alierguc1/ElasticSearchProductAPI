@@ -44,5 +44,12 @@ namespace ElasticSearchProduct.API.Controllers
             var response = await _productService.UpdateAsync(productUpdateDTO);
             return CreateActionResult(response);
         }
+
+        [HttpDelete("ProductDelete/{productId}")]
+        public async Task<IActionResult> ProductUpdate(string productId)
+        {
+            var response = await _productService.DeleteAsync(productId);
+            return CreateActionResult(response);
+        }
     }
 }

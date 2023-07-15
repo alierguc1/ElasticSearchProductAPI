@@ -18,6 +18,13 @@ namespace ElasticSearchProduct.API.Services.Concrete
             _productRepository = productRepository;
         }
 
+        public async Task<ProductReponseDTO<bool>> DeleteAsync(string Id)
+        {
+            var isSuccess = await _productRepository.DeleteAsync(Id);
+            if (!isSuccess) return ProductReponseDTO<bool>.Fail(new List<string> { "Silme İşlemi Başarısız." }, System.Net.HttpStatusCode.BadRequest);
+            return ProductReponseDTO<bool>.Success(true, System.Net.HttpStatusCode.OK);
+        }
+
         public async Task<ProductReponseDTO<List<ProductDTO>>> GetAllAsync()
         {
             var products = await _productRepository.GetAllAsync();
@@ -47,7 +54,7 @@ namespace ElasticSearchProduct.API.Services.Concrete
         public async Task<ProductReponseDTO<bool>> UpdateAsync(ProductUpdateDTO productUpdateDTO)
         {
             var isSuccess = await _productRepository.UpdateAsync(productUpdateDTO); 
-            if(!isSuccess) return ProductReponseDTO<bool>.Fail(new List<string> { "" }, System.Net.HttpStatusCode.BadRequest);
+            if(!isSuccess) return ProductReponseDTO<bool>.Fail(new List<string> { "Güncelleme işlemi başarısız." }, System.Net.HttpStatusCode.BadRequest);
             return ProductReponseDTO<bool>.Success(true, System.Net.HttpStatusCode.OK);
         }
     }
