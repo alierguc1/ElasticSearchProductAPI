@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "lX8uxEpLf0gzn6+WgqhdQI8KnK2IgoEQKaUNQqro6E5JCVdjDmKL9Oknyjh3HZPfYnnIsuIdFMh3eZliy3NkWQ==",
+  "dgSpecHash": "2Ntr8D8XekpKnlA50IouSYh30P9NRjle7vSt1WLj8NmkmLwu7uwJ0F+6/0AGxCJIqdMXa+szOhBcNvTjVbLk2A==",
   "success": true,
   "projectFilePath": "C:\\Users\\Cihan\\Desktop\\ElasticSearchProductAPI\\ElasticSearchProductAPI\\Src\\ElasticSearchProduct.API\\ElasticSearchProduct.API.csproj",
   "expectedPackageFiles": [
@@ -10,6 +10,7 @@
     "C:\\Users\\Cihan\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Cihan\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\Cihan\\.nuget\\packages\\microsoft.openapi\\1.4.3\\microsoft.openapi.1.4.3.nupkg.sha512",
+    "C:\\Users\\Cihan\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.18.1\\microsoft.visualstudio.azure.containers.tools.targets.1.18.1.nupkg.sha512",
     "C:\\Users\\Cihan\\.nuget\\packages\\nest\\7.17.5\\nest.7.17.5.nupkg.sha512",
     "C:\\Users\\Cihan\\.nuget\\packages\\swashbuckle.aspnetcore\\6.5.0\\swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
     "C:\\Users\\Cihan\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.5.0\\swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",

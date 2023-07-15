@@ -1,0 +1,16 @@
+version: '3.1'
+
+services:
+ service_api_elastic:
+  container_name: elastic_search_product_api
+  image: alierguc/elastic_search_product_api
+  build:
+   context: .
+   dockerfile: Src/Dockerfile
+  ports:
+  - 80:80
+  networks:
+  - int_net  
+   
+    
+    
