@@ -3,7 +3,6 @@ using ElasticSearchProduct.API.Dto;
 using ElasticSearchProduct.API.Models;
 using ElasticSearchProduct.API.Repositories.Interfaces;
 using ElasticSearchProduct.API.Services.Interfaces;
-using Nest;
 using System.Collections.Immutable;
 using System.Net;
 

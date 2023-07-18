@@ -1,6 +1,6 @@
-using Elasticsearch.Net;
+
 using ElasticSearchProduct.API.Extension;
-using Nest;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
