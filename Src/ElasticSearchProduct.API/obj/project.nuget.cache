@@ -1,23 +1,21 @@
 {
   "version": 2,
-  "dgSpecHash": "2Ntr8D8XekpKnlA50IouSYh30P9NRjle7vSt1WLj8NmkmLwu7uwJ0F+6/0AGxCJIqdMXa+szOhBcNvTjVbLk2A==",
+  "dgSpecHash": "e5Orh3ujV2QW+kjnOS2izQIlK6ogBX0gZY+PeSfX7RD7I2J5sttY+VXXOGexvB+QG/f0hINwKlg8vKzs5g29QQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Cihan\\Desktop\\ElasticSearchProductAPI\\ElasticSearchProductAPI\\Src\\ElasticSearchProduct.API\\ElasticSearchProduct.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Cihan\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
-    "C:\\Users\\Cihan\\.nuget\\packages\\elasticsearch.net\\7.17.5\\elasticsearch.net.7.17.5.nupkg.sha512",
+    "C:\\Users\\Cihan\\.nuget\\packages\\elastic.clients.elasticsearch\\8.1.3\\elastic.clients.elasticsearch.8.1.3.nupkg.sha512",
+    "C:\\Users\\Cihan\\.nuget\\packages\\elastic.transport\\0.4.12\\elastic.transport.0.4.12.nupkg.sha512",
     "C:\\Users\\Cihan\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.9\\microsoft.aspnetcore.openapi.7.0.9.nupkg.sha512",
     "C:\\Users\\Cihan\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Cihan\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\Cihan\\.nuget\\packages\\microsoft.openapi\\1.4.3\\microsoft.openapi.1.4.3.nupkg.sha512",
     "C:\\Users\\Cihan\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.18.1\\microsoft.visualstudio.azure.containers.tools.targets.1.18.1.nupkg.sha512",
-    "C:\\Users\\Cihan\\.nuget\\packages\\nest\\7.17.5\\nest.7.17.5.nupkg.sha512",
     "C:\\Users\\Cihan\\.nuget\\packages\\swashbuckle.aspnetcore\\6.5.0\\swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
     "C:\\Users\\Cihan\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.5.0\\swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
     "C:\\Users\\Cihan\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.5.0\\swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",
-    "C:\\Users\\Cihan\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.5.0\\swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512",
-    "C:\\Users\\Cihan\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
-    "C:\\Users\\Cihan\\.nuget\\packages\\system.diagnostics.diagnosticsource\\5.0.0\\system.diagnostics.diagnosticsource.5.0.0.nupkg.sha512"
+    "C:\\Users\\Cihan\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.5.0\\swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512"
   ],
   "logs": []
 }
